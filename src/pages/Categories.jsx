@@ -1,21 +1,39 @@
-// import React from 'react'
+import React from 'react'
+import Bloglist from '../components/BlogList'
 
-// const Categories = () => {
-//   return (
-//         <>
-//         <h1>Categories Page</h1>
-//           <div style={{backgroundColor: '#fff', width: '20%', padding:'30px'}}>
-//             {blogs.map((blog, index) => {
-//             return (
-//                 <div style={ {backgroundColor: '#ff0000',}} key={index} >
-//                     <h2>{blog.title}</h2>
-//                     <p>{blog.content}</p>
-//                     </div>
-//                     )
-//                 })}
-//          </div>
-//       </>
-//   )
-// }
+const Category = () => {
 
-// export default Categories
+const categoryBlogs = [{
+        title: 'Blog 1',
+        content: 'This is blog 1',
+        id: 1
+    },
+    {
+        title: 'Blog 2',
+        content: 'This is blog 2',
+        id: 2
+    },
+    {
+        title: 'Blog 3',
+        content: 'This is blog 3',
+        id: 3
+    },
+    {
+        title: 'Blog 4',
+        content: 'This is blog 4',
+        id: 4
+    }]
+
+const author = 'FrontEnd Master Team'
+    
+    return (
+        <>
+        <h1>Category Page</h1>
+          <div style={{backgroundColor: '#fff', width: '20%', padding:'30px'}}>
+                <Bloglist listOfBlog={categoryBlogs} owner={author} />
+         </div>
+      </>
+  )
+}
+
+export default Category

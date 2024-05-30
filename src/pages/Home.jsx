@@ -1,8 +1,10 @@
 import React from 'react'
 import Bloglist from '../components/BlogList'
 
-const Home = (props) => {
-    const blogs = [{
+const Home = () => {
+
+    const blogs = [
+        {
         title: 'Blog 1',
         content: 'This is blog 1',
         id: 1
@@ -52,13 +54,15 @@ const Home = (props) => {
         content: 'This is blog 10',
         id : 10
     
-        }]
+    }]
+
+    const name = 'Femi'
     
     return (
-        <>
+      <>
         <h1>Home Page</h1>
           <div style={{backgroundColor: '#fff', width: '20%', padding:'30px'}}>
-                <Bloglist blogs={blogs} />
+                <Bloglist listOfBlog={blogs} User={name} />
          </div>
       </>
   )

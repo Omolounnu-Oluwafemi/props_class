@@ -6,7 +6,7 @@ const { title, bgColor } = props
     
   return (
     <div>
-        <button type="submit" style={{backgroundColor:bgColor}}>{title}</button>
+        <button type="submit" style={{backgroundColor: bgColor}}>{title}</button>
     </div>
   )
 }
